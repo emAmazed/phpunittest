@@ -1,0 +1,7 @@
+# Check PHPUnit version
+phpunit --version
+
+# print out PHPUnit help info
+phpunit -h
+
+
