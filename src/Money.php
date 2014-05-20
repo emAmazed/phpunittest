@@ -3,9 +3,12 @@ class Money
 {
 	private $amount;
 
-	public function __contruct($amount)
+	private $currency;
+
+	public function __contruct($amount) //, Currency $currency)
 	{
 		$this->amount = $amount;
+		//$this->currency = $currency
 	}
 
 	public function getAmount()
@@ -15,6 +18,12 @@ class Money
 
 	public function negate()
 	{
+		#		return $this->newMoney(-1 * $this->amount);
 		return new Money(-1 * $this->amount);
 	}
+
+//	private function newMoney($amount)
+//	{
+//		return new static($amount, $this->currency);
+//	}
 }
