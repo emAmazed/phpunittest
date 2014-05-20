@@ -6,6 +6,3 @@ php:
   - 5.3
   - 5.2
 
-env:
-  - DB=mysql
-
